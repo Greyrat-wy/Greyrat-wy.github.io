@@ -15,6 +15,7 @@
       <a href="#what_i_like">喜欢的事</a>
       <a href="#details">生活细节</a>
       <a href="#precious">珍贵的</a>
+      <a href="#dream">理想</a>
       <a href="#contact">联系</a>
     </nav>
   </header>
@@ -24,7 +25,7 @@
     <section class="hero" id="top">
       <p class="eyebrow">你好，我是</p>
       <h1>大合生猿</h1>
-      <p class="lead">大四 · 备战考研 · 慢慢找回生活的方向</p>
+      <p class="lead">大四，在备战考研，慢慢找回生活的方向</p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#what_i_like">喜欢的事</a>
         <a class="btn" href="#contact">联系我</a>
@@ -54,19 +55,19 @@
           <h3>篮球</h3>
           <p>从初中陪伴我到现在，虽然还是很菜，但是很喜欢</p>
           <p class="tags"><span>初中</span><span>高中</span></p>
-          <a href="#">查看详情 →</a>
+          <button class="card-more" type="button" data-toast="以后会完善的~">查看详情 →</button>
         </article>
         <article class="card">
           <h3>滑板</h3>
           <p>陪伴我度过一段孤独的时间，真的很难，但还是想要练习下去</p>
           <p class="tags"><span>大学</span></p>
-          <a href="#">查看详情 →</a>
+          <button class="card-more" type="button" data-toast="以后会完善的~">查看详情 →</button>
         </article>
         <article class="card">
           <h3>游泳</h3>
           <p>小时候最擅长的运动，带给了我自信，一定会接着坚持</p>
           <p class="tags"><span>小学</span></p>
-          <a href="#">查看详情 →</a>
+          <button class="card-more" type="button" data-toast="以后会完善的~">查看详情 →</button>
         </article>
       </div>
     </section>
@@ -103,14 +104,23 @@
     <section class="section" id="precious">
       <h2>珍贵的</h2>
       <div class="gallery">
-        <figure><img src="assets/friends_2.jpg" alt="friends"><figcaption>地点，年份</figcaption></figure>
-        <figure><img src="assets/naonao.jpg" alt="naonao"><figcaption>地点，年份</figcaption></figure>
-        <figure><img src="assets/hometown_2.jpg" alt="hometown"><figcaption>地点，年份</figcaption></figure>
-        <figure><img src="assets/food_2.jpg" alt="food"><figcaption>地点，年份</figcaption></figure>
-        <figure><img src="assets/skate.jpg" alt="skate"><figcaption>地点，年份</figcaption></figure>
-        <figure><img src="assets/life_1.jpg" alt="life"><figcaption>地点，年份</figcaption></figure>
-        <figure><img src="assets/drink.jpg" alt="drink"><figcaption>地点，年份</figcaption></figure>
-        <figure><img src="assets/basketball.jpg" alt="basketball"><figcaption>地点，年份</figcaption></figure>
+        <figure><img src="assets/friends_2.jpg" alt="friends"><figcaption>草桥，2020</figcaption></figure>
+        <figure><img src="assets/naonao.jpg" alt="naonao"><figcaption>小区楼下的闹闹</figcaption></figure>
+        <figure><img src="assets/hometown_2.jpg" alt="hometown"><figcaption>桐城，过年</figcaption></figure>
+        <figure><img src="assets/food_2.jpg" alt="food"><figcaption>焖肉面</figcaption></figure>
+        <figure><img src="assets/skate.jpg" alt="skate"><figcaption>滑板，校门口</figcaption></figure>
+        <figure><img src="assets/life_1.jpg" alt="life"><figcaption>学车，大二暑假</figcaption></figure>
+        <figure><img src="assets/drink.jpg" alt="drink"><figcaption>生日调酒摆摊</figcaption></figure>
+        <figure><img src="assets/basketball.jpg" alt="basketball"><figcaption>篮球馆，新买的鞋</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- 理想 -->
+    <section class="section" id="dream">
+      <h2>理想</h2>
+      <div class="dream">
+        <p class="dream-text">以后想做一款独立游戏，<br>给更多人创造快乐。</p>
+        <p class="dream-note">我真的并不擅长计算机，也不擅长学习，更不擅长运动，但我想做些什么。</p>
       </div>
     </section>
 
@@ -128,10 +138,10 @@
 
   <footer class="site-footer">
     <p>© <span id="year"></span> 大合生猿</p>
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
   </footer>
 
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
